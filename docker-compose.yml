@@ -1,0 +1,11 @@
+version: '3'
+services:
+  gen:
+    build: .
+    environment:
+      - JAVA_OPTS=-Xms1024m -Xmx2048m -XX:PermSize=1024m -XX:MaxPermSize=4096m
+      - JAVA_TOOL_OPTIONS=-Dmajor.export.context=true -Dmajor.export.mutants=true
+      - ANT_OPTS=-Xms1024m -Xmx2048m -XX:PermSize=1024m -XX:MaxPermSize=4096m -J-Xms1024m -J-Xmx2048m -J-XX:PermSize=1024m -J-XX:MaxPermSize=4096m
+    volumes:
+      - .:/opt/src
+    command: python /opt/src/main.py /opt/src/jdolly_source/0 /opt/src/data

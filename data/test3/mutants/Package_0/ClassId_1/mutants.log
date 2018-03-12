@@ -1,0 +1,15 @@
+1:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:Package_0.ClassId_1@methodid_1():4:new ClassId_1().fieldid_1 |==> 0
+2:ROR:==(int,int):<=(int,int):Package_0.ClassId_1@methodid_0(int):7:fieldid_1 == param |==> fieldid_1 <= param
+3:ROR:==(int,int):>=(int,int):Package_0.ClassId_1@methodid_0(int):7:fieldid_1 == param |==> fieldid_1 >= param
+4:ROR:==(int,int):FALSE(int,int):Package_0.ClassId_1@methodid_0(int):7:fieldid_1 == param |==> false
+5:STD:<DEC>:<NO-OP>:Package_0.ClassId_1@methodid_0(int):7:fieldid_1-- |==> <NO-OP>
+6:LVR:POS:0:Package_0.ClassId_1@methodid_0(int):8:1 |==> 0
+7:LVR:POS:NEG:Package_0.ClassId_1@methodid_0(int):8:1 |==> -1
+8:AOR:*(int,int):%(int,int):Package_0.ClassId_1@methodid_0(int):8:1 * param |==> 1 % param
+9:AOR:*(int,int):+(int,int):Package_0.ClassId_1@methodid_0(int):8:1 * param |==> 1 + param
+10:AOR:*(int,int):-(int,int):Package_0.ClassId_1@methodid_0(int):8:1 * param |==> 1 - param
+11:AOR:*(int,int):/(int,int):Package_0.ClassId_1@methodid_0(int):8:1 * param |==> 1 / param
+12:LVR:POS:0:Package_0.ClassId_1:10:1 |==> 0
+13:LVR:POS:NEG:Package_0.ClassId_1:10:1 |==> -1
+14:LVR:POS:0:Package_0.ClassId_1:11:2 |==> 0
+15:LVR:POS:NEG:Package_0.ClassId_1:11:2 |==> -2

@@ -1,0 +1,11 @@
+1:STD:<ASSIGN>:<NO-OP>:Package_0.ClassId_0@methodid_1():4:fieldid_1 = fieldid_0++ |==> <NO-OP>
+2:EVR:<IDENTIFIER(int)>:<DEFAULT>:Package_0.ClassId_0@methodid_1():5:fieldid_1 |==> 0
+3:LVR:NEG:0:Package_0.ClassId_0:7:-2 |==> 0
+4:LVR:NEG:POS:Package_0.ClassId_0:7:-2 |==> 2
+5:EVR:<IDENTIFIER(int)>:<DEFAULT>:Package_0.ClassId_1@methodid_0(int):4:fieldid_1 |==> 0
+6:STD:<ASSIGN>:<NO-OP>:Package_0.ClassId_1@methodid_1():7:fieldid_0 = fieldid_0++ |==> <NO-OP>
+7:EVR:<IDENTIFIER(int)>:<DEFAULT>:Package_0.ClassId_1@methodid_1():8:fieldid_0 |==> 0
+8:LVR:NEG:0:Package_0.ClassId_1:10:-1 |==> 0
+9:LVR:NEG:POS:Package_0.ClassId_1:10:-1 |==> 1
+10:LVR:0:POS:Package_0.ClassId_1:11:0 |==> 1
+11:LVR:0:NEG:Package_0.ClassId_1:11:0 |==> -1

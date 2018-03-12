@@ -1,0 +1,12 @@
+1:LVR:POS:0:Package_0.ClassId_1@methodid_0(int):4:1 |==> 0
+2:LVR:POS:NEG:Package_0.ClassId_1@methodid_0(int):4:1 |==> -1
+3:AOR:/(int,int):%(int,int):Package_0.ClassId_1@methodid_0(int):4:1 / param |==> 1 % param
+4:AOR:/(int,int):*(int,int):Package_0.ClassId_1@methodid_0(int):4:1 / param |==> 1 * param
+5:AOR:/(int,int):+(int,int):Package_0.ClassId_1@methodid_0(int):4:1 / param |==> 1 + param
+6:AOR:/(int,int):-(int,int):Package_0.ClassId_1@methodid_0(int):4:1 / param |==> 1 - param
+7:STD:<ASSIGN>:<NO-OP>:Package_0.ClassId_1@methodid_1():7:fieldid_0 = --fieldid_0 |==> <NO-OP>
+8:EVR:<IDENTIFIER(int)>:<DEFAULT>:Package_0.ClassId_1@methodid_1():8:fieldid_0 |==> 0
+9:LVR:NEG:0:Package_0.ClassId_1:10:-1 |==> 0
+10:LVR:NEG:POS:Package_0.ClassId_1:10:-1 |==> 1
+11:LVR:NEG:0:Package_0.ClassId_1:11:-2 |==> 0
+12:LVR:NEG:POS:Package_0.ClassId_1:11:-2 |==> 2

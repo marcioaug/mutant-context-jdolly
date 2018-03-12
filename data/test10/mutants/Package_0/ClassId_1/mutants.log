@@ -1,0 +1,14 @@
+1:EVR:<MEMBER_SELECT(int)>:<DEFAULT>:Package_0.ClassId_1@methodid_0():4:ClassId_1.this.fieldid_0 |==> 0
+2:ROR:>=(int,int):==(int,int):Package_0.ClassId_1@methodid_1(int):7:fieldid_0 >= param |==> fieldid_0 == param
+3:ROR:>=(int,int):>(int,int):Package_0.ClassId_1@methodid_1(int):7:fieldid_0 >= param |==> fieldid_0 > param
+4:ROR:>=(int,int):TRUE(int,int):Package_0.ClassId_1@methodid_1(int):7:fieldid_0 >= param |==> true
+5:AOR:*(int,int):%(int,int):Package_0.ClassId_1@methodid_1(int):7:fieldid_0 * fieldid_1 |==> fieldid_0 % fieldid_1
+6:AOR:*(int,int):+(int,int):Package_0.ClassId_1@methodid_1(int):7:fieldid_0 * fieldid_1 |==> fieldid_0 + fieldid_1
+7:AOR:*(int,int):-(int,int):Package_0.ClassId_1@methodid_1(int):7:fieldid_0 * fieldid_1 |==> fieldid_0 - fieldid_1
+8:AOR:*(int,int):/(int,int):Package_0.ClassId_1@methodid_1(int):7:fieldid_0 * fieldid_1 |==> fieldid_0 / fieldid_1
+9:STD:<RETURN>:<NO-OP>:Package_0.ClassId_1@methodid_1(int):7:return Config.__M_NO == 8 ? fieldid_0 / fieldid_1 : Config.__M_NO == 7 ? fieldid_0 - fieldid_1 : Config.__M_NO == 6 ? fieldid_0 + fieldid_1 : Config.__M_NO == 5 ? fieldid_0 % fieldid_1 : Config.__M_NO == 0 && Config.COVERED(5, 8) ? fieldid_0 * fieldid_1 : fieldid_0 * fieldid_1; |==> <NO-OP>
+10:EVR:<IDENTIFIER(int)>:<DEFAULT>:Package_0.ClassId_1@methodid_1(int):8:fieldid_0 |==> 0
+11:LVR:POS:0:Package_0.ClassId_1:10:2 |==> 0
+12:LVR:POS:NEG:Package_0.ClassId_1:10:2 |==> -2
+13:LVR:POS:0:Package_0.ClassId_1:11:1 |==> 0
+14:LVR:POS:NEG:Package_0.ClassId_1:11:1 |==> -1
