@@ -139,7 +139,6 @@ def generate_mutants(test, classpath, working_dir):
         exec_major(class_file, classpath, mutants_dir)
 
         csv = open(os.path.join(mutants_dir, 'tce.csv'), 'w')
-        csv.write('test,mutantNo,status\n')
 
         total_mutants = len([dir for dir in os.listdir(mutants_dir) if os.path.isdir(os.path.join(mutants_dir, dir))])
 
@@ -160,12 +159,12 @@ def generate_mutants(test, classpath, working_dir):
                         print ('!!!! %s -> MUTANT %s (%s) IS EQUIVALENT. %s' % (test, mutant, java_file, ('< ' * 10)))
                         
                         equivante_count += 1
-                        csv.write(test + ',' + mutant + ',' + 'TCE_CONFIRMED\n')
+                        csv.write(mutant + ',' + 'TCE_CONFIRMED\n')
                     else:
-                        csv.write(test + ',' + mutant + ',' + 'NOT_CONFIRMED\n')
+                        csv.write(mutant + ',' + 'NOT_CONFIRMED\n')
                 else:
                     print('%s ERROR -> MUTANT %s DONT COMPILE.' % (test, mutant))
-                    csv.write(test + ',' + mutant + ',' + 'DONT_COMPILE\n')
+                    csv.write(mutant + ',' + 'DONT_COMPILE\n')
         
         csv.close()
 
